@@ -13,7 +13,7 @@ Projektet går ud på at lave en surfboard shop med ofte anvendte funktionalitet
 9. Reviews
 
 Jeg anvender Trello som "Project management" værktøj, og min opstart af projektet ser således ud:<br />
-
+![](assets/screen1.png)
 
 Jeg laver projektet med ExpressJS framework, hvilket er et web framework generelt brugt til opbygning af RESTful API'er med NodeJS.<br />
 Det første jeg gør efter installation, er at installerer de npm pakker jeg skal bruge i projektet:
