@@ -36,4 +36,3 @@ Det første jeg gør efter installation, er at installerer de npm pakker jeg ska
 4. kør: nodemon (Starter automatisk bin/www startup script, hvis ikke der tilføjes fil som parameter)
 5. 
 
-
