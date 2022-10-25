@@ -1,0 +1,4 @@
+.idea/
+.env
+surf-shop/.env
+surf-shop/node_modules
