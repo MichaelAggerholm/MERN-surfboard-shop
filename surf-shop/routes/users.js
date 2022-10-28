@@ -31,22 +31,22 @@ router.put('/profile/:user_id', (req, res, next) => {
   res.send('/profile/:user_id');
 });
 
-/* GET /forgot password */
+/* GET /forgot */
 router.get('/forgot', (req, res, next) => {
   res.send('/forgot');
 });
 
-/* PUT /forgot password */
+/* PUT /forgot */
 router.put('/forgot', (req, res, next) => {
   res.send('/forgot');
 });
 
-/* GET /reset password */
+/* GET /reset/:token */
 router.get('/reset/:token', (req, res, next) => {
   res.send('/reset/:token');
 });
 
-/* PUT /reset password */
+/* PUT /reset/:token */
 router.put('/reset/:token', (req, res, next) => {
   res.send('/reset/:token');
 });
