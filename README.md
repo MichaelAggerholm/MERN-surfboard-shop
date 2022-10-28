@@ -23,6 +23,10 @@ Det første jeg gør efter installation, er at installerer de npm pakker jeg ska
 4. passport (authentication library)
 5. nodemon (Kørsel af app med automatisk genstart ved opdateringer i koden)
 
+Efterfølgende, har jeg tilpasset mine routes ud fra min nogenlunde gennemtænkte struktur.<br />
+Routes tester jeg altid løbende, i dette tilfælde har jeg testet med Postman, eksempel herunder: <br />
+![](assets/billede2.png)
+
 ## Kørsel
 ### Nødvendigheder for at kunne køre projektet
 1. nodejs
