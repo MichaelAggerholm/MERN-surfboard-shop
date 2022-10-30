@@ -27,18 +27,23 @@ Efterfølgende, har jeg tilpasset mine routes ud fra min nogenlunde gennemtænkt
 Routes tester jeg altid løbende, i dette tilfælde har jeg testet med Postman, eksempel herunder: <br />
 ![](assets/billede2.png)
 
-Alt hvad der hedder *User authentication* og *Password Security* kører jeg igennem tre npm biblioteker kaldet _passport_, _passport-local-mongoose_ og _express-session_.
+Alt hvad der hedder *User authentication* og *Password Security* kører jeg igennem tre npm biblioteker kaldet _passport_, _passport-local-mongoose_ og _express-session_. <br />
+Inden jeg fortsætter implementering af bruger funktionalitet, tester mit mongoose passport setup i postman, med en bruger oprettelse: <br />
+![img.png](assets/img.png)
 
 ## Kørsel
 ### Nødvendigheder for at kunne køre projektet
-1. nodejs _( sudo snap install node --classic )_
-2. npm _( er installeret med nodejs snap pakke )_
-3. nodemon _( sudo npm install -g nodemon )_
+1. *nodejs*
+2. *npm*
+3. *nodemon*
+4. *mongodb* _( https://www.mongodb.com/docs/v4.2/tutorial/install-mongodb-on-ubuntu/ )_
+5. *mongodb-org*
 
 ### For at køre applikationen
 1. klon projektet ned.
 2. cd til surf-shop
 3. kør: sudo npm i (installerer alle npm pakker som nævnt i dokumentationen)
-4. kør: nodemon (Starter automatisk bin/www startup script, hvis ikke der tilføjes fil som parameter)
-5. 
+4. kør: sudo systemctl start mongod (Starter lokale mongodb server op)
+5. kør: nodemon (Starter automatisk bin/www startup script, hvis ikke der tilføjes fil som parameter)
+6.
 
