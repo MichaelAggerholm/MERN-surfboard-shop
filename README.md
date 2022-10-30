@@ -27,6 +27,8 @@ Efterfølgende, har jeg tilpasset mine routes ud fra min nogenlunde gennemtænkt
 Routes tester jeg altid løbende, i dette tilfælde har jeg testet med Postman, eksempel herunder: <br />
 ![](assets/billede2.png)
 
+Alt hvad der hedder *User authentication* og *Password Security* kører jeg igennem tre npm biblioteker kaldet _passport_, _passport-local-mongoose_ og _express-session_.
+
 ## Kørsel
 ### Nødvendigheder for at kunne køre projektet
 1. nodejs _( sudo snap install node --classic )_
