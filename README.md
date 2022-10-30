@@ -29,9 +29,9 @@ Routes tester jeg altid løbende, i dette tilfælde har jeg testet med Postman, 
 
 ## Kørsel
 ### Nødvendigheder for at kunne køre projektet
-1. nodejs
-2. npm
-3. 
+1. nodejs _( sudo snap install node --classic )_
+2. npm _( er installeret med nodejs snap pakke )_
+3. nodemon _( sudo npm install -g nodemon )_
 
 ### For at køre applikationen
 1. klon projektet ned.
