@@ -29,7 +29,7 @@ Routes tester jeg altid løbende, i dette tilfælde har jeg testet med Postman, 
 
 Alt hvad der hedder *User authentication* og *Password Security* kører jeg igennem tre npm biblioteker kaldet _passport_, _passport-local-mongoose_ og _express-session_. <br />
 Inden jeg fortsætter implementering af bruger funktionalitet, tester mit mongoose passport setup i postman, med en bruger oprettelse: <br />
-![img.png](assets/img.png)
+![img.png](assets/postmantest.png)
 
 ## Kørsel
 ### Nødvendigheder for at kunne køre projektet
@@ -45,5 +45,5 @@ Inden jeg fortsætter implementering af bruger funktionalitet, tester mit mongoo
 3. kør: sudo npm i (installerer alle npm pakker som nævnt i dokumentationen)
 4. kør: sudo systemctl start mongod (Starter lokale mongodb server op)
 5. kør: nodemon (Starter automatisk bin/www startup script, hvis ikke der tilføjes fil som parameter)
-6.
+6. Kør: sudo systemctl start mongod
 
