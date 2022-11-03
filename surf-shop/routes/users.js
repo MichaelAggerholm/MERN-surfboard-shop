@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {postRegister, postLogin, postLogout} = require('../controllers/users');
-const {errorHandler} = require('../middleware');
+const {asyncErrorHandler} = require('../middleware');
 
 /* GET /users/register */
 router.get('/register', (req, res, next) => {
@@ -9,7 +9,7 @@ router.get('/register', (req, res, next) => {
 });
 
 /* POST /users/register */
-router.post('/register', errorHandler(postRegister));
+router.post('/register', asyncErrorHandler(postRegister));
 
 /* GET /users/login */
 router.get('/login', (req, res, next) => {
