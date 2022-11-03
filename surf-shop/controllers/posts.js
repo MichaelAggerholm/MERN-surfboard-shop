@@ -26,8 +26,14 @@ module.exports = {
         let post = await Post.findById(req.params.id);
         res.render('posts/edit', {post});
     },
+    // Posts update
     async postUpdate(req, res, next) {
         let post = await Post.findByIdAndUpdate(req.params.id, req.body.post, {new: true});
         res.redirect(`/posts/${post.id}`);
+    },
+    // Posts destroy
+    async postDestroy(req, res, next) {
+        await Post.findByIdAndRemove(req.params.id);
+        res.redirect(`/posts`);
     }
 }
