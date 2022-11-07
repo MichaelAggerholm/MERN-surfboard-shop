@@ -52,5 +52,4 @@ Cloudinary library er den del som giver adgang til have have billeder i skyen, m
 4. Indsæt Cloudinary secret i .env, samt api_key og api_name i controllers/posts.js. (Findes i https://cloudinary.com/console/)
 4. kør: sudo systemctl start mongod (Starter lokale mongodb server op)
 5. kør: nodemon (Starter automatisk bin/www startup script, hvis ikke der tilføjes fil som parameter)
-6. Kør: sudo systemctl start mongod
 
