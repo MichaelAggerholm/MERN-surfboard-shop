@@ -31,6 +31,12 @@ Alt hvad der hedder *User authentication* og *Password Security* kører jeg igen
 Inden jeg fortsætter implementering af bruger funktionalitet, tester mit mongoose passport setup i postman, med en bruger oprettelse: <br />
 ![img.png](assets/postmantest.png)
 
+Efter at have lavet mine routes samt crud funktionalitet, skal jeg til at implementere image upload til mine posts, det gør jeg i dette omgang med cloudinary,<br />
+Dokumentationen til cloudinary kan findes her: https://cloudinary.com/documentation/node_integration <br />
+Cloudinary er gratis, og let at bruge, der skal dog installeres en npm pakke til dette: "cloudinary" og "multer" <br />
+Cloudinary library er den del som giver adgang til have have billeder i skyen, multer er den del som skal benyttes i projektes form, for at vælge billeder. <br />
+
+
 ## Kørsel
 ### Nødvendigheder for at kunne køre projektet
 1. *nodejs*
@@ -43,6 +49,7 @@ Inden jeg fortsætter implementering af bruger funktionalitet, tester mit mongoo
 1. klon projektet ned.
 2. cd til surf-shop
 3. kør: sudo npm i (installerer alle npm pakker som nævnt i dokumentationen)
+4. Indsæt Cloudinary secret i .env, samt api_key og api_name i controllers/posts.js. (Findes i https://cloudinary.com/console/)
 4. kør: sudo systemctl start mongod (Starter lokale mongodb server op)
 5. kør: nodemon (Starter automatisk bin/www startup script, hvis ikke der tilføjes fil som parameter)
 6. Kør: sudo systemctl start mongod
