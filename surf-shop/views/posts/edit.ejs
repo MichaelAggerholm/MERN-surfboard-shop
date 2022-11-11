@@ -9,7 +9,8 @@
             <% post.images.forEach(function(image, index) { %>
                 <img src="<%= image.url %>" width="150px" alt="">
                 <label for="image<%= index %>">Delete?</label>
-                <input type="checkbox" name="deleteImage" class="imageDeleteCheckbox" id="image<%= index %>" value="<%= image.public_id %>">
+                <input type="checkbox" name="deleteImage" class="imageDeleteCheckbox" id="image<%= index %>"
+                       value="<%= image.public_id %>">
             <% }); %>
         </div>
     </div>
@@ -32,7 +33,7 @@
 
         // Figure out if the form can be submitted or not (images total has to be <= 4, otherwise fail).
         let newTotal = existingImages - imagesToBeDeleted + imagesToUpload;
-        if(newTotal > 4) {
+        if (newTotal > 4) {
             event.preventDefault();
             let removalAmount = newTotal - 4;
             // Ternary operator used here, to add an s there is more than one image.
