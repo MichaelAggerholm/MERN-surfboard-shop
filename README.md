@@ -36,7 +36,6 @@ Dokumentationen til cloudinary kan findes her: https://cloudinary.com/documentat
 Cloudinary er gratis, og let at bruge, der skal dog installeres en npm pakke til dette: "cloudinary" og "multer" <br />
 Cloudinary library er den del som giver adgang til have have billeder i skyen, multer er den del som skal benyttes i projektes form, for at vælge billeder. <br />
 
-
 ## Kørsel
 ### Nødvendigheder for at kunne køre projektet
 1. *nodejs*
@@ -53,3 +52,31 @@ Cloudinary library er den del som giver adgang til have have billeder i skyen, m
 4. kør: sudo systemctl start mongod (Starter lokale mongodb server op)
 5. kør: nodemon (Starter automatisk bin/www startup script, hvis ikke der tilføjes fil som parameter)
 
+## Fremhævet kode i projektet
+Herunder har jeg valgt at fremvise nogle eksempler på kode benyttet i projektet.
+### Edit post submit validering ift. mængden af billeder i en post.
+Scriptet herunder tjekker op på, om mængden af billeder overskriver maksimum af tilladte billeder i en post, når en post redigeres.
+```javascript
+// Find post edit form.
+let postEditForm = document.getElementById('postEditForm');
+// Add submit listener to post edit form.
+postEditForm.addEventListener('submit', function (event) {
+    // Find amount of images to be uploaded.
+    let imagesToUpload = document.getElementById('imageUpload').files.length;
+    // Find total number of existing images.
+    let existingImages = document.querySelectorAll('.imageDeleteCheckbox').length;
+    // Find total number of images selected to be deleted.
+    let imagesToBeDeleted = document.querySelectorAll('.imageDeleteCheckbox:checked').length;
+
+    // Figure out if the form can be submitted or not (images total has to be <= 4, otherwise fail).
+    let newTotal = existingImages - imagesToBeDeleted + imagesToUpload;
+    if (newTotal > 4) {
+        event.preventDefault();
+        let removalAmount = newTotal - 4;
+        // Ternary operator used here, to add an s there is more than one image.
+        alert(`You need to remove at least ${removalAmount} image${removalAmount === 1 ? '' : 's'}!`);
+    }
+});
+```
+
+### Andet sjovt eksempel af kode, kommer snarest. 
